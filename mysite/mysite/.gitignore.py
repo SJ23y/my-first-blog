@@ -3,4 +3,7 @@ __pycache__
 myvenv
 db.sqlite3
 .db.sqlite3
+C:\drafts\mysite\db.sqlite3
+mysite.db.sqlite3
+..db.sqlite
 .DS_Store
