@@ -1,5 +1,8 @@
 **.pyc
 __pycache__
+__pycache__/*
+mysite/__pycache__/*
+.gitignore
 myvenv
 db.sqlite3
 .db.sqlite3
