@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1500px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.header h2 {
+	margin: 40px;
+	display: inline-block;
+	font-size: 3em;
+	letter-spacing: 0.2em;
+	
+}
+
+.header {
+	margin: 0 auto;
+	min-height: 150px;
+	border: 1px solid black;
+	background-color: lightblue;
+}
+
+.container::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.header-search {
+	display: inline-block;
+	border-radius: 5px;
+
+}
+
+.header-search input[type='search'] {
+	border-radius: 5px;
+	height: 30px;
+	width: 400px;
+	margin-right: 40px;
+
+}
+
+.header-left {
+	float: left;	
+}
+
+.header-btn {
+	background-color: green;
+	height: 27px;
+	width: 90px;
+	box-shadow: 5px 5px 0 0 black;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 6px;
+	font-size: 1.2em;
+}
+
+.right {
+	float: right;
+	margin-top: 59px;
+	margin-left: 40px;
+}
+
+.main {
+	float: left;
+}
+
+.main h2, 
+.main > a {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin: 40px;
+	font-size: 2em;
+}
+
+.main > a {
+	font-weight: normal;	
+}
+
+.main .question-block {
+	position: relative;
+	border:  1px solid lightblue;
+	width: 630px;
+	min-height: 170px;
+	margin: 40px;
+	padding: 20px;
+	margin-top: 0;
+	padding-left: 150px;
+
+}
+
+.main .question-block img {
+	width: 100px;
+	height: 120px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.main .question-block h3 {
+	margin: 0;
+	padding: 0;		
+	font-size: 1.8em;
+	margin-bottom: 20px;
+}
+
+.main .question-block p {
+	margin: 0;
+	padding: 0;		
+	font-size: 1.5em;
+}
+
+.main .question-block input[type="number"] {
+	width: 100px;	
+	position: absolute;
+	top: 160px;
+	left: 20px;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.main .question-block .block-text {
+	height: 120px;
+}
+
+.main .question-block .block-foot {	
+	font-size: 1.5em;
+}
+
+.side {
+	float: right;
+}
+
+.side h2 {
+	margin: 0;
+	padding: 0;		
+	font-size: 1.8em;
+	margin-bottom: 20px;
+}
+
+.paginator a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+	border: 1px solid lightblue;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.paginator a:first-child {
+	margin-left: 40px;
+}

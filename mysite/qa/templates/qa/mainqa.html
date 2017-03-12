@@ -1,7 +1,9 @@
-<DOCTYPE! html>
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
 <head>
 	<title>AskSJ</title>
-	<link rel="stylesheet" type="text/css" href="mainqa.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mainqa.css' %}">
 </head>
 <body>
 	<div class="header">
@@ -102,3 +104,4 @@
 		</div>
 	</div>		
 </body>
+</html>
