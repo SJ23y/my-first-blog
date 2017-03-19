@@ -22,7 +22,7 @@
                 <img src="{{ post.image.url }}" width="600" class="image-responsive" alt>
             {% endif %}
             <br>
-            {{ post.text|linebreaksbr }}
+            {{ post.text|safe|linebreaksbr }}
         </div>
         <hr>
         <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>

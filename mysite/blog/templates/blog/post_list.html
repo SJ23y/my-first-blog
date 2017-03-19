@@ -10,7 +10,7 @@
                 {% if post.image %}
                     <img src="{{ post.image.url }}" width="600"  class="image-responsive" alt>
                 {% endif %}
-                <p>{{ post.text|linebreaksbr }}</p>
+                <p>{{ post.text|safe|linebreaksbr|truncatechars:200 }}</p>
                 <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
             </div>
         {% endfor %}
