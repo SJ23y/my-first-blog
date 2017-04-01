@@ -91,7 +91,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'None'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
