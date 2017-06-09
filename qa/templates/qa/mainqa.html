@@ -1,0 +1,74 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AskSJ</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mainqa.css' %}">
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<h2>Ask SJ</h2>
+			<form method="Post" action="#" class="header-search">
+				<input type="search" name="search">
+			</form>
+			<a class="header-btn" href="#">Ask!</a>		
+			<a class="header-btn right" href="qa/login/">Log in</a> 
+			<a class="header-btn right" href="#">Sign up</a>
+		</div>
+	</div>
+
+	<div class="container">
+		{% block content %}
+		{% endblock %}
+		
+			<div class="question-block">
+				<img src="#" alt="avatar">
+				<div class="block-text">
+					<h3><a href="#">How to build a moon park?</a></h3>
+					<p>Guys, I have a problem with a moon park. Can't find the black-jack ...</p>
+				</div>
+				<form>
+					<input type="number" name="number" id="number">
+				</form>
+				<div class="block-foot">
+					<a href="#">answer (3)</a>
+					<span>Tags</span> 
+					<a href="#">black-jack</a>
+					<a href="#">bender</a>
+				</div>			
+			</div>
+		
+		</div>
+		<div class="side">
+			<div class="pop-tags">
+				<h2>Popular Tags</h2>
+				<p></p>
+			</div>
+			
+			<div class="Best-members">
+				<h2>Best Members</h2>
+				<ul>
+					<li>Mr.Freeman</li>
+					<li>Dr.House</li>
+					<li>Bender</li>
+					<li>Queen Victoria</li>
+					<li>V.Pupkin</li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+	
+
+	<div class="paginator">
+		<div class="container">
+			<a href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">...</a>
+			<a href="#">54</a>			
+		</div>
+	</div>		
+</body>
+</html>
